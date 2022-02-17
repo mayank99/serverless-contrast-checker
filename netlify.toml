@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/odb/:foreground/:background/"
-to = "/.netlify/functions/cached"
+to = "/.netlify/builders/cached"
 status = 200
 force = true
 _generated_by_eleventy_serverless = "cached"
