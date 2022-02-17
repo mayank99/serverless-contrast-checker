@@ -1,12 +1,41 @@
-# Eleventy Serverless Color Contrast Checker Starter
+<p align="center">
+  <a href="https://www.learnwithjason.dev">
+    <img src="https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto,w_240/v1579281727/lwj/learnwithjason.png" alt="Learn With Jason" width="120" />
+  </a>
+</p>
+<h1 align="center">
+  Build a Color Contrast Checker with Eleventy Serverless (with Ben Myers)
+</h1>
+<h3 align="center">
+  This app was built live on <em>Learn With Jason</em> and it was super fun and I’m sad you weren’t there.
+</h3>
+<p align="center">
+  But don’t worry! You can still: 
+  <a href="https://www.learnwithjason.dev/build-a-color-contrast-checker-with-eleventy-serverless"><strong>watch the video</strong></a> · 
+  <a href="https://11ty-serverless-contrast-checker.netlify.app"><strong>see the demo</strong></a> · 
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/jlengstorf/serverless-contrast-starter&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex"><strong>deploy this project</strong></a> · 
+  <a href="https://jason.af/lwj/schedule"><strong>see upcoming episodes</strong></a>
+</p>
 
-Howdy! This repo is a base project for a [Learn With Jason stream](https://www.learnwithjason.dev/build-a-color-contrast-checker-with-eleventy-serverless) about [Eleventy's](https://11ty.dev) latest feature [Eleventy Serverless](https://www.11ty.dev/docs/plugins/serverless/).
+&nbsp;
 
-## Setup
+Eleventy 1.0 has just been released, and with it comes Eleventy Serverless for on-request page generation. Ben Myers will teach us how to get started with Eleventy Serverless by building a color contrast checker with little to no client-side JavaScript.
 
-1. Click the green **"Use this template"** button on this repository to create your own repository with this same code.
-2. Clone your new repo.
-3. In your terminal, navigate to your new repo.
-4. Install your Node dependencies with `npm install` (or, if you prefer, `yarn`).
-5. Start the dev server with `npm run dev`.
-6. Navigate to [`localhost:8080`](http://localhost:8080) in your browser to see the site.
+&nbsp;
+
+## More Information
+
+- [Watch this app get built live + see links and additional resources][episode]
+- [Follow _Learn With Jason_ on Twitch][twitch] to watch future episodes live
+- [Add the _Learn With Jason_ schedule to your Google Calendar][cal]
+
+&nbsp;
+<p align="center">
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/jlengstorf/serverless-contrast-starter&utm_source=learnwithjason&utm_medium=github&utm_campaign=devex">
+    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy this project to Netlify" />
+  </a>
+</p>
+
+[episode]: https://www.learnwithjason.dev/build-a-color-contrast-checker-with-eleventy-serverless
+[twitch]: https://jason.af/twitch
+[cal]: https://jason.af/lwj/cal
