@@ -1,0 +1,48 @@
+---
+layout: page.html
+permalink:
+  onrequest: /contrast/
+---
+
+<style>
+  body {
+    background-image: linear-gradient(
+      -75deg,
+      {{eleventy.serverless.query.background}} 50%,
+      {{eleventy.serverless.query.foreground}} 50%
+    );
+  }
+</style>
+
+<h1>
+  {{ eleventy.serverless.query.foreground }} & {{
+  eleventy.serverless.query.background }} have a contrast ratio of
+</h1>
+
+<p>
+  <output> {{ formattedRatio }}:1 </output>
+</p>
+
+<form action="/contrast/" method="get">
+  <div class="fields">
+    <div>
+      <label for="foreground">Foreground</label>
+      <input
+        type="color"
+        id="foreground"
+        name="foreground"
+        value="{{ eleventy.serverless.query.foreground }}"
+      />
+    </div>
+    <div>
+      <label for="background">Background</label>
+      <input
+        type="color"
+        id="background"
+        name="background"
+        value="{{ eleventy.serverless.query.background }}"
+      />
+    </div>
+  </div>
+  <button type="submit">Get Ratio</button>
+</form>
