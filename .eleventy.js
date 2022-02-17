@@ -17,6 +17,11 @@ module.exports = function (eleventyConfig) {
     name: 'onrequest',
   });
 
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    functionsDir: 'netlify/functions',
+    name: 'cached',
+  });
+
   return {
     dir: {
       input: 'src',
