@@ -1,11 +1,4 @@
 [[redirects]]
-from = "/odb/:foreground/:background/"
-to = "/.netlify/builders/cached"
-status = 200
-force = true
-_generated_by_eleventy_serverless = "cached"
-
-[[redirects]]
 from = "/contrast/"
 to = "/.netlify/functions/onrequest"
 status = 200

@@ -17,12 +17,6 @@ module.exports = function (eleventyConfig) {
     name: 'onrequest',
   });
 
-  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
-    functionsDir: 'netlify/functions',
-    name: 'cached',
-    redirects: 'netlify-toml-builders',
-  });
-
   return {
     dir: {
       input: 'src',
