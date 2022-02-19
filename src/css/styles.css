@@ -15,7 +15,7 @@ body {
 }
 
 main {
-	max-width: 40ch;
+	max-width: 60ch;
 	margin: auto;
 	background-color: white;
 	padding: 1rem 2rem;
@@ -29,7 +29,7 @@ main {
 h1 {
 	font-size: 1.8rem;
 	font-weight: 300;
-	max-width: 19ch;
+	max-width: 60%;
 	text-align: center;
 	margin: 1em auto 0.2em;
 }
