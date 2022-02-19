@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Color Contrast Checker using 11ty</title>
+	<title>Color Contrast Checker using 11ty serverless</title>
+	<meta property="og:title" content="Contrast checker using 11ty serverless">
+	<meta property="og:type" content="website" >
 	{%if ogImage %}<meta property="og:image" content="{{ ogImage }}">{% endif %}
-	{%if formattedRatio %}<meta property="description" content="The contrast ratio between {{ foreground }} and {{ background }} is {{ formattedRatio }}">{% endif %}
+	{%if formattedRatio %}<meta property="og:description" content="{{ foreground }} and {{ background }} have a contrast ratio of {{ formattedRatio }}">{% endif %}
 	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

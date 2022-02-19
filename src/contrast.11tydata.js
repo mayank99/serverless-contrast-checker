@@ -28,9 +28,10 @@ module.exports = {
         return '';
       }
 
-      const url = encodeURIComponent(`https://contrast-checker-11ty.netlify.app/contrast/?foreground=${data.foreground.replace('#', '')}&background=${data.background.replace('#', '')}`);
+      const baseUrl = 'https://contrast-checker-11ty.netlify.app/'
+      const currentUrl = encodeURIComponent(`${baseUrl}/contrast/?foreground=${data.foreground.replace('#', '')}&background=${data.background.replace('#', '')}`);
 
-      return `https://og-screenshot-11ty.netlify.app/${url}/opengraph`;
+      return `${baseUrl}/screenshot/${currentUrl}/opengraph`;
     },
   },
 };
