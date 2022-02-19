@@ -1,4 +1,4 @@
-// this file is taken verbatim from https://github.com/11ty/api-screenshot
+// this file is modified from https://github.com/11ty/api-screenshot
 
 const { builder } = require("@netlify/functions");
 const chromium = require("chrome-aws-lambda");
@@ -82,7 +82,7 @@ async function screenshot(
 async function handler(event, context) {
   // e.g. /https%3A%2F%2Fwww.11ty.dev%2F/small/1:1/smaller/
   let pathSplit = event.path.split("/").filter((entry) => !!entry);
-  let [url, size, aspectratio, zoom, cachebuster] = pathSplit;
+  let [/* endpoint */, url, size, aspectratio, zoom, cachebuster] = pathSplit;
   let format = "jpeg"; // hardcoded for now, but png and webp are supported!
   let viewport = [];
 
@@ -172,6 +172,7 @@ async function handler(event, context) {
   }
 
   url = decodeURIComponent(url);
+  url = url.replace('#', '%23'); // # actually refers to the hexcode
 
   try {
     if (!isFullUrl(url)) {

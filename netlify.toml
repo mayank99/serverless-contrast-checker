@@ -13,7 +13,7 @@ force = true
 _generated_by_eleventy_serverless = "onrequest"
 
 [[redirects]]
-from = "/screenshot/"
+from = "/screenshot/*"
 to = "/.netlify/builders/screenshot"
 status = 200
 force = true

@@ -16,7 +16,7 @@ module.exports = {
     },
     ogImage: (data) => {
       if (!data.eleventy.serverless) {
-        return null;
+        return '';
       }
 
       const { foreground, background } = data.eleventy.serverless.query;
