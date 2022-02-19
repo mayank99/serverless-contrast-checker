@@ -1,6 +1,7 @@
 {
 	"name": "serverless-contrast-starter",
-	"version": "1.0.0",
+	"version": "0.0.0",
+	"private": true,
 	"description": "",
 	"main": ".eleventy.js",
 	"scripts": {
@@ -8,7 +9,7 @@
 		"dev": "eleventy --serve"
 	},
 	"keywords": [],
-	"author": "Ben Myers <ben@benmyers.dev>",
+	"author": "Mayank",
 	"license": "ISC",
 	"dependencies": {
 		"@11ty/eleventy": "^1.0.0",
