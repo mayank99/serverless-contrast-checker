@@ -28,7 +28,7 @@ module.exports = {
         return '';
       }
 
-      const baseUrl = 'https://contrast-checker-11ty.netlify.app/'
+      const baseUrl = 'https://contrast-checker-11ty.netlify.app'
       const currentUrl = encodeURIComponent(`${baseUrl}/contrast/?foreground=${data.foreground.replace('#', '')}&background=${data.background.replace('#', '')}`);
 
       return `${baseUrl}/screenshot/${currentUrl}/opengraph`;

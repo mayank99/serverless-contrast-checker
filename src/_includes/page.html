@@ -6,9 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Color Contrast Checker using 11ty serverless</title>
 	<meta property="og:title" content="Contrast checker using 11ty serverless">
-	<meta property="og:type" content="website" >
+	<meta name="twitter:title" content="Contrast checker using 11ty serverless">
+	<meta name="twitter:card" content="summary_large_image">
+
 	{%if ogImage %}<meta property="og:image" content="{{ ogImage }}">{% endif %}
+	{%if ogImage %}<meta name="twitter:image:src" content="{{ ogImage }}">{% endif %}
+	{%if ogImage %}<meta name="twitter:image:alt" content="Contrast Ratio">{% endif %}
+	
 	{%if formattedRatio %}<meta property="og:description" content="{{ foreground }} and {{ background }} have a contrast ratio of {{ formattedRatio }}">{% endif %}
+	{%if formattedRatio %}<meta name="twitter:description" content="{{ foreground }} and {{ background }} have a contrast ratio of {{ formattedRatio }}">{% endif %}
+	
 	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
